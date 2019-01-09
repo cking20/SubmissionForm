@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="employeeSubmissionForm.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Employee Submission Form</title>
+</head>
+<body>
+	<header>
+		<div class="logo"><img src="mm-hayes-logo.png"></div>
+	</header>
+	
+	<form id="employeeSubmission">
+		<p>Employee Name</p><input name="employeeName" type="text" required="true">
+		<p>Employee Number</p><input name="employeeNumber" type="text" required="true">
+		<p>Phone Number</p><input name="phoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="true" placeholder="XXX-XXX-XXXX">
+		<p>Address</p><input name="address" type="text" required="true">
+		<p>City</p><input name="city" type="text" required="true">
+		<p>State</p><select name="state" id="stateDropdown" type="text" required="true"></select>
+		<p>Zip</p><input name="zip" type="text" required="true">
+		
+		<p>Are you currently employed at MM Hayes?</p>
+		<input name="isCurrentEmployee" type="checkbox" value="currentEmployee">
+		<label for="isCurrentEmployee">Yes</label>
+
+		<input type="submit" id="submitEmployee" value="Submit">
+	</form>
+</body>
+</html>

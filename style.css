@@ -1,0 +1,67 @@
+/*=====================================*\
+Index
+ - body
+ - form
+   - p
+   - p:first-child
+ - input
+   - checkbox
+   - submit
+     - :hover
+ - select
+ - .logo
+\*=====================================*/
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+	width: 50%;
+	margin: auto;
+	padding: 5%;
+	background-color: #f8f5f0;
+	border-radius: 1em;
+	box-shadow: .06em .06em .12em grey;
+}
+form p{
+	margin-bottom: 0;
+}
+form p:first-child{
+	margin-top: 0;
+}
+
+input{
+	width: 92%;
+	padding: .5em 4% .5em 4%;
+	border-radius: 1em;
+	border-style: none;
+}
+input[type="checkbox"]{
+	width: auto;
+	margin: .5em;
+}
+input[type="submit"]{
+	width: 100%;
+	margin-top: 1em;
+	box-shadow: .06em .06em .12em grey;
+}
+input[type="submit"]:hover{
+	background-color: darkgrey;
+	-webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+	box-shadow: none;
+}
+
+select{
+	width: 100%;
+	padding: .5em .5em .5em .5em;
+	border-radius: 1em;
+	border-style: none;
+}
+
+.logo img{
+	margin: auto;
+	display: block;
+}
